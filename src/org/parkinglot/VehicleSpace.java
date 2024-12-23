@@ -1,15 +1,14 @@
 package org.parkinglot;
 
 public class VehicleSpace {
-    private boolean available; // True if available, false if occupied
-    private String vehicleType; // Type of vehicle (Car, Bike, Bus)
-    private Vehicle vehicle; // The actual vehicle in this space
-
+    private boolean available; 
+    private String vehicleType; 
+    private Vehicle vehicle; 
     // Constructor
     public VehicleSpace() {
-        this.available = true; // Initially, all spaces are available
-        this.vehicleType = "None"; // Default vehicle type, "None" means no vehicle
-        this.vehicle = null; // No vehicle is parked yet
+        this.available = true; 
+        this.vehicleType = "None"; 
+        this.vehicle = null; 
     }
 
     // Get the vehicle type for this space
@@ -20,8 +19,8 @@ public class VehicleSpace {
     // Set the vehicle in this space
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
-        this.vehicleType = vehicle.getType(); // Set the vehicle type based on the vehicle parked
-        this.available = false; // Once a vehicle is parked, the space is no longer available
+        this.vehicleType = vehicle.getType(); 
+        this.available = false; 
     }
 
     // Check if the space is available
