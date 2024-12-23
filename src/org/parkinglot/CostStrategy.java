@@ -22,12 +22,12 @@ public class CostStrategy {
                 System.out.println("Unknown vehicle type: " + vehicleType);
         }
 
-        // If ratePerHour is still 0, the vehicle type was not recognized properly
+       
         if (ratePerHour == 0.0) {
             System.out.println("Error: Invalid vehicle type or missing cost.");
         }
 
-        // Calculate the total cost based on the hours parked and the vehicle type rate
+      
         return ratePerHour * hoursParked;
     }
 
